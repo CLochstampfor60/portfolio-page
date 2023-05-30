@@ -1,0 +1,241 @@
+/* GLOBAL*****************************/
+
+/* @import url(<linkrel="preconnect"href="https://fonts.googleapis.com"><linkrel="preconnect"href="https://fonts.gstatic.com"crossorigin><linkhref="https://fonts.googleapis.com/css2?family=Almendra&family=Almendra+Display&family=MedievalSharp&family=Roboto:ital,wght@0,700;1,700&display=swap"rel="stylesheet">); */
+
+:root {
+  --textcolor: black;
+  --bgcolor: white;
+  --bgcolor-dark: #3737edc8;
+  --primary: skyblue;
+  --secondary: rgb(0, 255, 110);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+body {
+  margin: 0;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: "Roboto", serif;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+header,
+#intro,
+#skills,
+footer {
+  background-color: var(--bgcolor-dark);
+  color: white;
+}
+
+header a,
+/* #intro a, */
+#skills a,
+footer a {
+  color: white;
+}
+
+/*  Accessibility *****************************/
+*/ .sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1;
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+}
+
+.skip-to-content {
+  position: absolute;
+  z-index: 9999;
+  background-color: transparent;
+  color: black;
+  margin-inline: auto;
+  font-size: 0.875rem;
+  transform: translateY(-120%);
+}
+
+.skip-to-content:focus {
+  transform: translateY(0);
+  transition: transform 250ms ease-in;
+  background-color: transparent;
+  color: black;
+}
+
+/* HEADER *****************************/
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .button-link {
+  padding: 8px 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* DESKTOP NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a:not(.button-link) {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#my-name {
+  font-size: 18px;
+}
+
+/* MOBILE NAV */
+@media (max-width: 40rem) {
+  .menu-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 1.5 rem;
+    right: 2 rem;
+  }
+}
+
+nav ul {
+  display: none;
+}
+
+.container {
+  /* width: calc(100% - 200px);
+  max-width: 1000px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* border: solid red 3px; */
+  width: min(70rem, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.button-link {
+  background-color: var(--primary);
+  padding: 14px 16px;
+  border-radius: 18px;
+  border-style: solid;
+  border-color: var(--textcolor) !important;
+  color: var(--textcolor);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover,
+.button-link:focus {
+  background-color: var(--secondary);
+  font-style: italic;
+}
+
+/* INTRODUCTION **************************** */
+#intro {
+  text-align: center;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding-block: 50px;
+}
+
+#intro .container > * {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: clamp(1.25rem, calc(0.9rem + 1.74vw), 2.25rem);
+  margin: 0;
+}
+
+/* SKILLS *****************************/
+#skills ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  gap: 30px;
+}
+
+/* PORTFOLIO *****************************/
+/* #portfolio {
+  padding-block: 100px 60px;
+}
+
+section {
+  display: block;
+} */
+
+*/ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax 280px, 1fr);
+  /* grid-template-columns: minmax(0, 1fr) */
+  gap: 40px;
+}
+
+.grid-container img {
+  aspect-ratio: 1.4;
+  object-fit: cover;
+}
+
+img {
+  width: 100%;
+}
+
+/* pseudo element */
+article h3 {
+  position: relative;
+}
+
+article h3::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 5px;
+  background: var(--primary);
+  border-radius: 6px;
+}
+
+/* FOOTER *****************************/
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-block: 10px;
+  color: white;
+}
+
+/* MOBILE RESPONSIVENESS *****************************/
+@media (min-width: 44rem) {
+  #skills .container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 40px;
+  }
+}
