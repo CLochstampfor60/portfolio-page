@@ -4,120 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HTML tab Title -->
     <title>Locky's Portfolio</title>
+    <!--CSS and Google Fonts -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Javascript, deferred to work after page loads. -->
+    <script src="./script.js" defer></script>
   </head>
   <body id="#top">
     <a href="#main" class="skip-to-content">Skip to content</a>
 
     <!-- HEADER ************** -->
     <header>
-			<div class="container">
-			<p id="my-name">Lochstampfor</p>
-			<nav>
-				<ul>
-					<li>
-						<a href="#">Skills</a>
-					</li>
-					<li>
-						<a href="#">Portfolio</a>
-					</li>
-					<li>
-						<a href="#" class="button-link">Resume</a>
-					</li>
-				</ul>
-				<button type="button" class="menu-toggle">TOGGLE</button>
-			</nav>
-		</div>
-          </header>
+      <div class="container">
+        <p id="my-name">Lochstampfor</p>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Skills</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="button-link">Resume</a>
+            </li>
+          </ul>
+          <button type="button" class="menu-toggle">TOGGLE</button>
+        </nav>
+      </div>
+    </header>
     <!-- INTRODUCTION **************-->
     <main id="main">
-			<div>
-				<section id="intro" >
-        <p>Welcome!</p>
-        <h1>Hi, I'm Carl, a Front-End Developer.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-          voluptatibus veniam, architecto suscipit quae mollitia omnis, earum
-          iure deserunt consequatur pariatur quia officiis quibusdam ut harum
-          alias! Officiis, ab quis?
-        </p>
-        <a href="#mailto:cflochjr@gmail.com" class="button-link">Contact Me</a>
-        <!-- <a href="tel:">Call Us!</a> -->
-      </section>
-		</div>
-
-
+      <div>
+        <section id="intro">
+          <p>Welcome!</p>
+          <h1>Hi, I'm Carl, a Front-End Developer.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#mailto:cflochjr@gmail.com" class="button-link"
+            >Contact Me</a
+          >
+          <!-- <a href="tel:">Call Us!</a> -->
+        </section>
+      </div>
       <!-- SKILLS **************-->
-			<div>
+
       <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>React</li>
-        </ul>
+        <div class="container">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+          </ul>
+        </div>
       </section>
-
-      <img src="" alt="" />
-			</div>
-
 
       <!-- PORTFOLIO **************-->
-      <section class="container">
+      <section id="portfolio" class="container">
         <h2>Portfolio</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro
-          autem cum ipsum libero beatae blanditiis delectus aperiam minima
-          deserunt. Inventore, blanditiis autem ad voluptatum itaque illum eos
-          asperiores sint!
-        </p>
-				<br />
-				<br />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <article class="grid-container">
-          <div class="col-1">
+          <article class="col-1">
+            <!-- <img src="./images/clouds.png" alt="" /> -->
             <h3>Project 1</h3>
-            <img src="images/golden-retriever.jpg" alt="Golden Retriever" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              impedit similique ea sequi, dignissimos tenetur, in architecto
-              cumque corrupti culpa ut est nesciunt rem. Sapiente reprehenderit
-              vero fuga dolorum aliquid?
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </article>
+          <!-- <img src="./images/fields.png" alt="" /> -->
           <article class="col-2">
             <h3>Project 2</h3>
-            <img src="images/Sunset.jpg" alt="Sunset" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              impedit similique ea sequi, dignissimos tenetur, in architecto
-              cumque corrupti culpa ut est nesciunt rem. Sapiente reprehenderit
-              vero fuga dolorum aliquid?
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </article>
           <article class="col-3">
+            <!-- <img src="./images/moon.png" alt="" /> -->
             <h3>Project 3</h3>
-            <img src="images/galaxy.avif" alt="Galaxy" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est qui,
-              eius architecto sint nemo laudantium ad consectetur dolor eos
-              impedit consequuntur fugit, obcaecati, nihil porro repellendus
-              incidunt quibusdam odio! Quas!
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </article>
-        </div>
+        </article>
       </section>
     </main>
 
     <!-- FOOTER **************-->
     <footer>
-			<div class="container">
-      <p>&copy; Carl Lochstampfor</p>
-      <a href="#top">Back to the top</a>
-			</div>
-
+      <div class="container">
+        <p>&copy; Carl Lochstampfor</p>
+        <a href="#top">Back to the top</a>
+      </div>
     </footer>
   </body>
 </html>

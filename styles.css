@@ -1,13 +1,11 @@
 /* GLOBAL*****************************/
 
-/* @import url(<linkrel="preconnect"href="https://fonts.googleapis.com"><linkrel="preconnect"href="https://fonts.gstatic.com"crossorigin><linkhref="https://fonts.googleapis.com/css2?family=Almendra&family=Almendra+Display&family=MedievalSharp&family=Roboto:ital,wght@0,700;1,700&display=swap"rel="stylesheet">); */
-
 :root {
   --textcolor: black;
   --bgcolor: white;
-  --bgcolor-dark: #3737edc8;
-  --primary: skyblue;
-  --secondary: rgb(0, 255, 110);
+  --bgcolor-dark: #659ab0;
+  --primary: #b07b65;
+  --secondary: yellow;
 }
 
 * {
@@ -16,13 +14,12 @@
 
 html {
   scroll-behavior: smooth;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 body {
   margin: 0;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
-  font-family: "Roboto", serif;
+  background-color: var(--bgcolor);
+  /* margin-bottom: ; */
 }
 
 p {
@@ -35,8 +32,17 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
 header,
-#intro,
+/* #intro, */
 #skills,
 footer {
   background-color: var(--bgcolor-dark);
@@ -44,7 +50,7 @@ footer {
 }
 
 header a,
-/* #intro a, */
+#intro a,
 #skills a,
 footer a {
   color: white;
@@ -65,7 +71,7 @@ footer a {
 
 .skip-to-content {
   position: absolute;
-  z-index: 9999;
+  z-index: 99999;
   background-color: transparent;
   color: black;
   margin-inline: auto;
@@ -81,6 +87,13 @@ footer a {
 }
 
 /* HEADER *****************************/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  border-bottom: solid var(--primary);
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -93,6 +106,10 @@ header .button-link {
 
 .menu-toggle {
   display: none;
+}
+
+#my-name {
+  font-size: 18px;
 }
 
 /* DESKTOP NAV */
@@ -109,10 +126,6 @@ nav a:not(.button-link) {
   font-weight: 600;
 }
 
-#my-name {
-  font-size: 18px;
-}
-
 /* MOBILE NAV */
 @media (max-width: 40rem) {
   .menu-toggle {
@@ -120,11 +133,46 @@ nav a:not(.button-link) {
     position: absolute;
     top: 1.5 rem;
     right: 2 rem;
+    z-index: 99999;
   }
 }
 
 nav ul {
   display: none;
+}
+
+nav.open ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: var(--bgcolor-dark);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99998;
+
+  position: fixed;
+  inset: 0;
+}
+
+/* INTRODUCTION **************************** */
+#intro {
+  text-align: center;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-block: 100px;
+  background: linear-gradient(140deg, skyblue, limegreen),
+    url("./images/galaxy.png");
+  background-size: cover;
+}
+
+#intro .container > * {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: clamp(1.25rem, calc(0.9rem + 1.74vw), 2.25rem);
+  margin: 0;
 }
 
 .container {
@@ -135,73 +183,61 @@ nav ul {
   /* border: solid red 3px; */
   width: min(70rem, 100% - 2rem);
   margin-inline: auto;
+  padding-block: 10px;
 }
 
 .button-link {
   background-color: var(--primary);
   padding: 14px 16px;
-  border-radius: 18px;
+  border-radius: 24px;
   border-style: solid;
   border-color: var(--textcolor) !important;
-  color: var(--textcolor);
+  color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .button-link:hover,
 .button-link:focus {
+  color: black;
   background-color: var(--secondary);
   font-style: italic;
 }
 
-/* INTRODUCTION **************************** */
-#intro {
-  text-align: center;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding-block: 50px;
-}
-
-#intro .container > * {
-  margin-top: 30px;
-}
-
-h1 {
-  font-size: clamp(1.25rem, calc(0.9rem + 1.74vw), 2.25rem);
-  margin: 0;
-}
-
 /* SKILLS *****************************/
+
 #skills ul {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   gap: 30px;
 }
 
 /* PORTFOLIO *****************************/
-/* #portfolio {
-  padding-block: 100px 60px;
-}
-
-section {
-  display: block;
-} */
-
-*/ .grid-container {
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax 280px, 1fr);
+  grid-template-columns: repeat(auto-fill, minimax(280px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax 280px, 1fr); */
   /* grid-template-columns: minmax(0, 1fr) */
   gap: 40px;
 }
+/* #portfolio {
+  padding-block: 100px 60px;
+} */
+
+/* section {
+  display: block;
+}  */
 
 .grid-container img {
   aspect-ratio: 1.4;
   object-fit: cover;
 }
 
-img {
-  width: 100%;
+/* Selects eery paragraph which has a <br /> tag immediately following. */
+p:has(+ br) {
+  color: red;
 }
 
 /* pseudo element */
@@ -220,6 +256,16 @@ article h3::after {
   border-radius: 6px;
 }
 
+/* MOBILE RESPONSIVENESS *****************************/
+@media (min-width: 44rem) {
+  #skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
 /* FOOTER *****************************/
 footer .container {
   display: flex;
@@ -228,14 +274,4 @@ footer .container {
   gap: 40px;
   padding-block: 10px;
   color: white;
-}
-
-/* MOBILE RESPONSIVENESS *****************************/
-@media (min-width: 44rem) {
-  #skills .container {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    gap: 40px;
-  }
 }
