@@ -105,26 +105,16 @@ header .button-link {
   padding: 10px 14px;
 }
 
-.menu-toggle {
+/* .menu-toggle {
   display: none;
-}
+} */
 
 #my-name {
   font-size: 18px;
 }
 
-/* DESKTOP NAV */
 nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-nav a:not(.button-link) {
-  color: var(--bgcolor);
-  text-decoration: none;
-  font-weight: 600;
+  display: none;
 }
 
 /* MOBILE NAV */
@@ -132,14 +122,19 @@ nav a:not(.button-link) {
   .menu-toggle {
     display: inline-block;
     position: absolute;
-    top: 1.5 rem;
-    right: 2 rem;
+    top: 1.5rem;
+    right: 2rem;
     z-index: 99999;
   }
 }
 
+/* DESKTOP NAV */
+
 nav ul {
-  display: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 nav.open ul {
@@ -154,6 +149,12 @@ nav.open ul {
 
   position: fixed;
   inset: 0;
+}
+
+nav a:not(.button-link) {
+  color: var(--bgcolor);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* INTRODUCTION **************************** */
