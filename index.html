@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- HTML tab Title -->
+    <!-- HTML tab Title -->
     <title>Locky's Portfolio</title>
-<!--CSS and Google Fonts -->
+    <!--CSS and Google Fonts -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-<!-- Javascript, deferred to work after page loads. -->
+    <!-- Javascript, deferred to work after page loads. -->
     <script src="./script.js" defer></script>
   </head>
   <body id="#top">
     <a href="#main" class="skip-to-content">Skip to content</a>
 
-<!-- HEADER ****************************************** -->
+    <!-- HEADER ****************************************** -->
     <header>
       <div class="container">
         <p id="my-name">Lochstampfor</p>
@@ -36,15 +36,21 @@
               <a href="#" class="button-link">Resume</a>
             </li>
           </ul>
-          <button type="button" class="menu-toggle">TOGGLE</button>
+          <button type="button" class="menu-toggle">
+            <span></span>
+          </button>
+          <!-- <button type="button" class="menu-toggle">TOGGLE</button> -->
+          <!-- <span></span> -->
         </nav>
       </div>
     </header>
 
     <main id="main">
-			<p class="sr-only">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="sr-only">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
 
-<!-- INTRODUCTION **************-->
+      <!-- INTRODUCTION **************-->
       <section id="intro">
         <div class="container">
           <span class="welcome">Welcome!</span>
@@ -63,7 +69,7 @@
         </div>
       </section>
 
-<!-- SKILLS **************-->
+      <!-- SKILLS **************-->
       <section id="skills">
         <div class="container">
           <h2>Skills</h2>
@@ -76,48 +82,50 @@
         </div>
       </section>
 
-<!-- GITHUB -->
-			<section id='github'>
-				<div class="container">
-					<h2>Github</h2>
-						<p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error aut dicta adipisci animi!</p>
-					<div id="reposContainer"></div>
-				</div>
-			</section>
+      <!-- GITHUB -->
+      <section id="github">
+        <div class="container">
+          <h2>Github</h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error
+            aut dicta adipisci animi!
+          </p>
+          <div id="reposContainer"></div>
+        </div>
+      </section>
 
-<!-- PORTFOLIO **************-->
+      <!-- PORTFOLIO **************-->
       <section id="portfolio" class="container">
-				<h2>Portfolio</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				
-				<br />
-				<br />
+        <h2>Portfolio</h2>
+        <p class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <br />
+        <br />
         <div class="grid-container">
           <article class="col-1">
             <img src="./images/clouds.png" alt="" />
-            <div class="info">
-              <h3>Project 1</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <!-- </div> -->
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </article>
-          <img src="./images/fields.png" alt="" />
-          <div class="info">
-            <article class="col-2">
-              <h3>Project 2</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-          </div>
-          <div class="info">
-            <article class="col-3">
-              <img src="./images/moon.png" alt="" />
-              <h3>Project 3</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-          </div>
+
+          <article class="col-2">
+            <img src="./images/fields.png" alt="" />
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </article>
+
+          <article class="col-3">
+            <img src="./images/moon.png" alt="" />
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </article>
+        </div>
       </section>
     </main>
 
-<!-- FOOTER **************-->
+    <!-- FOOTER **************-->
     <footer>
       <div class="container">
         <p>&copy; Carl Lochstampfor</p>
