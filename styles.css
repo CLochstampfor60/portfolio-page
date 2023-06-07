@@ -7,10 +7,10 @@
   --primary: #b07b65;
   --primary-muted: #85e7ca7c;
 
-  --secondary: yellow;
+  --secondary: red;
 
-  --blue: rgb(74, 174, 255);
-  --blue-muted: rgba(74, 174, 255, 0.2);
+  --yellow: #b07b65;
+  --yellow-bg: yellow;
 }
 
 * {
@@ -46,6 +46,10 @@ img {
   width: 100%;
 }
 
+h3 {
+  margin-block: 0;
+}
+
 header,
 #intro,
 #skills,
@@ -75,7 +79,7 @@ footer a {
   padding: 0;
   border: 0;
   margin: -1;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
 }
@@ -244,7 +248,7 @@ h1 {
 /* GITHUB */
 
 #github .container {
-  border-top: solid var(--primary-muted) 1px;
+  border-top: solid var(--primary) 1px;
   padding-block: 40px 80px;
 }
 
@@ -269,8 +273,8 @@ h1 {
   gap: 10px 30px;
 
   align-items: center;
-  /* color: rgba(255, 255, 255, 0.8); */
-  color: black;
+  color: rgba(255, 255, 255, 0.8);
+  /* color: black; */
 }
 
 repo-info h3,
@@ -293,8 +297,8 @@ repo-info h3,
 .repo-info p.language {
   font-size: 12px;
   text-transform: uppercase;
-  color: var(--blue);
-  background-color: var(--blue-muted);
+  color: var(--yellow);
+  background-color: var(--yellow-bg);
   justify-self: start;
   /* display: inline-block; */
   padding: 5px 11px;
