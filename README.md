@@ -42,11 +42,7 @@
 
 ## Completed Work (Pending, bugs in need of resolution):
 
-- Bug #1: for accessibility, the 'sr-only' section at the top of the webpage doesn't hide out sometimes, and pops-up as separate div under the header (I temporarily commented this section out).
-
-- Bug #2: Grid-Container for Portfolio section and images don't adjust into two columns. They remain fixated within one-column.
-
-- Bug #3: The background-image for the Introduction section doesn't show when linear-gradient is used in the same line of code.
+-Future changes: color scheme and the background images in order for them to mutually exist in a complementary manner (particularly the introduction section).
 
 ---
 

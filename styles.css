@@ -72,7 +72,7 @@ footer a {
 }
 
 /*  Accessibility *****************************/
-*/ .sr-only {
+.sr-only {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -252,7 +252,7 @@ nav a:not(.button-link) {
   /* padding-top: 100px;
   padding-bottom: 100px; */
   padding-block: 100px;
-  background: linear-gradient(140deg, skyblue, limegreen),
+  background: linear-gradient(140deg, rgba(135, 207, 235, 0.743), limegreen),
     url('./images/galaxy.png');
   /* background-image:  url('./images/galaxy.png'); */
   background-size: cover;
@@ -392,7 +392,7 @@ repo-info h3,
 /* PORTFOLIO *****************************/
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minimax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax 280px, 1fr); */
   /* grid-template-columns: minmax(0, 1fr) */
   gap: 40px;
