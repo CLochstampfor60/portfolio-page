@@ -4,7 +4,9 @@
 
 - Develop a interactive web application from scratch.
 
-- The web application will harbor current and future portfolio of work, with the adaptability to showcase future skills and talents as time progresses in the professional world.
+- The web application harbors accomplished portfolio projects, with the adaptability to showcase future skills and talents as time progresses in the professional world.
+
+- The web application runs several applications in the browser with dynamic updates. Applications include HTML, CSS, and Javascript.
 
 ---
 
@@ -40,7 +42,9 @@
 
 ---
 
-## Completed Work (Pending, bugs in need of resolution):
+## Completed Work and Future Opportunities:
+
+-Completed Work:
 
 -Future changes: color scheme and the background images in order for them to mutually exist in a complementary manner (particularly the introduction section).
 

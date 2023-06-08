@@ -1,5 +1,3 @@
-console.log('Hello World')
-
 // variable for the toggle button
 const menuButton = document.querySelector('.menu-toggle')
 
@@ -13,7 +11,7 @@ menuButton.addEventListener('click', () => {
   nav.classList.toggle('open')
 })
 
-// Fetch my own Github Repository Link.
+// Fetch data using my own Github Repository Link.
 fetch('https://api.github.com/users/CLochstampfor60/repos')
   .then((response) => response.json())
   .then((data) => {
@@ -25,9 +23,10 @@ fetch('https://api.github.com/users/CLochstampfor60/repos')
     // Repositories Container variable
     const reposContainer = document.getElementById('reposContainer')
 
-    // Create loop to scrub through each repo and pull specific information/grab properties.
+    // Create a loop to process through each repo and pull specific information/grab properties.
     for (let i = 0; i < limitedData.length; i++) {
-      const repo = limitedData[i]
+			const repo = limitedData[i]
+			
       const repoInfoDiv = document.createElement('div')
       // Add a class
       repoInfoDiv.classList.add('repo-info')
@@ -41,6 +40,7 @@ fetch('https://api.github.com/users/CLochstampfor60/repos')
       reposContainer.appendChild(repoInfoDiv)
     }
   })
+  // Function to catch any errors and to console log them to the browser for the dev.
   .catch((error) => {
     console.error(error)
   })
