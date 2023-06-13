@@ -61,7 +61,7 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold; */
 
-h2:has(p) {
+h2:has(+ p) {
   margin-bottom: 0.75rem;
 }
 
@@ -469,7 +469,7 @@ h1 {
   margin-block: 30px;
 }
 
-/* Selects eery paragraph which has a <br /> tag immediately following. */
+/* Selects every paragraph which has a <br /> tag immediately following. */
 /* p:has(+ br) {
   color: red;
 } */
