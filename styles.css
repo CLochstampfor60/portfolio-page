@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+	scroll-padding: 60px;
 }
 
 body {
@@ -397,6 +398,7 @@ h1 {
   font-weight: 18px;
   font-weight: 400;
   text-transform: lowercase;
+  hyphens: auto;
 }
 
 .repo-info p.desc {
@@ -435,20 +437,23 @@ h1 {
 }
 
 /* PORTFOLIO *****************************/
+
+#portfolio {
+  padding-block: 40px 80px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax 280px, 1fr); */
-  /* grid-template-columns: minmax(0, 1fr) */
+  grid-template-columns: minmax(0, 1fr);
   gap: 40px;
 }
-/* #portfolio {
-  padding-block: 100px 60px;
-} */
 
-/* section {
-  display: block;
-}  */
+@media (min-width: 30rem) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
 
 .grid-container img {
   aspect-ratio: 1.4;
@@ -517,12 +522,47 @@ article li {
   /* box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5); */
 }
 
+/* CTA *****************************/
+#cta .container {
+  background-color: var(--primary);
+  padding: 40px 60px 50px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.523);
+  margin-bottom: -80px;
+  position: relative;
+}
+
+#cta img {
+  width: 60px;
+}
+
+#cta a {
+  display: inline-flex;
+  background-color: white;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: var(--purple) solid 2px;
+
+  color: var(--purple);
+  font-weight: 600;
+  margin-inline: 4px;
+  margin-top: 20px;
+}
+
+#cta i {
+  font-size: 40px;
+}
+
 /* FOOTER *****************************/
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  padding-block: 10px;
+  padding-block: 140px 50px;
   color: white;
 }

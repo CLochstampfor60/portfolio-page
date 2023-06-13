@@ -12,6 +12,15 @@ menuButton.addEventListener('click', () => {
   nav.classList.toggle('open')
 })
 
+// Grabbing all the link elements inside the top navigation bar.
+const navLinks = document.querySelectorAll('nav a')
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open')
+  })
+})
+
 // *************GITHUB FETCH*************
 // Fetch data using my own Github Repository Link.
 fetch('https://api.github.com/users/CLochstampfor60/repos')
