@@ -49,8 +49,24 @@ img {
   width: 100%;
 }
 
+h2 {
+  /* 28px to 36px */
+  font-size: clamp(1.75rem, calc(1.58rem + 0.87vw), 2.25rem);
+  margin-block: 2rem;
+}
+/* display: block;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; */
+
+h2:has(p) {
+  margin-bottom: 0.75rem;
+}
+
 h3 {
-  margin-block: 0;
+  /* 20px to 26px */
+  font-size: clamp(1.25rem, calc(1.12rem + 0.65vw), 1.63rem);
 }
 
 header,
@@ -72,6 +88,11 @@ footer a {
 
 .menu-toggle {
   display: none;
+}
+
+footer * {
+  text-transform: capitalize;
+  font-size: 12px;
 }
 
 /*  Accessibility *****************************/
@@ -251,10 +272,12 @@ nav a:not(.button-link) {
   /* padding-top: 100px;
   padding-bottom: 100px; */
   padding-block: 100px;
-  background: linear-gradient(140deg, rgba(135, 207, 235, 0.743), limegreen),
-    url('./images/galaxy.png');
+  background: linear-gradient(140deg, rgba(135, 207, 235, 0.743), limegreen);
+  /* url('./images/galaxy.png'); */
+  /* background-image: url('./images/Sunset.jpg'); */
   /* background-image:  url('./images/galaxy.png'); */
   background-size: cover;
+  /* color: black; */
 }
 
 #intro .container > * {
@@ -272,9 +295,15 @@ h1 {
   /* margin-left: auto;
   margin-right: auto; */
   /* border: solid red 3px; */
-  width: min(70rem, 100% - 2rem);
+  width: min(70rem, 100% - 4rem);
   margin-inline: auto;
   padding-block: 10px;
+}
+
+@media (min-width: 50rem) {
+  .container {
+    width: min(70rem, 100% - 8rem);
+  }
 }
 
 .button-link {
@@ -296,14 +325,6 @@ h1 {
 }
 
 /* SKILLS *****************************/
-/* h2 {
-  display: block;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-} */
-
 #skills ul {
   list-style: none;
   display: flex;
@@ -311,6 +332,17 @@ h1 {
   margin: 0px;
   padding-left: 0px;
   gap: 20px 30px;
+}
+
+#skills li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#skills li img {
+  height: 22px;
+  width: auto;
 }
 
 /* MOBILE RESPONSIVENESS *****************************/
