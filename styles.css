@@ -127,23 +127,7 @@ header .button-link {
   font-size: 18px;
 }
 
-nav ul {
-  display: none;
-}
-
-/* MOBILE NAV */
-@media (max-width: 40rem) {
-  .menu-toggle {
-    display: inline-block;
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    z-index: 99999;
-  }
-}
-
 /* DESKTOP NAV */
-
 nav ul {
   list-style: none;
   display: flex;
@@ -246,6 +230,18 @@ nav a:not(.button-link) {
   /* rotate bottom menu line */
   nav.open .menu-toggle span::after {
     transform: rotate(-45deg);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 99999;
   }
 }
 
