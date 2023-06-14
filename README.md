@@ -6,7 +6,7 @@
 
 - The web application harbors accomplished portfolio projects, with the adaptability to showcase future skills and talents as time progresses in the professional world.
 
-- The web application runs several applications in the browser with dynamic updates. Applications include HTML, CSS, and Javascript.
+- The web application runs several applications in the browser with dynamic updates. Applications include HTML, CSS, Javascript, Font Awesome, and GSAP.
 
 ---
 
@@ -46,7 +46,17 @@
 
 -Completed Work:
 
--Future changes: color scheme and the background images in order for them to mutually exist in a complementary manner (particularly the introduction section).
+- Placeholder #1:
+- Placeholder #2:
+- Placeholder #3:
+
+-Future changes:
+
+- Cursor hover over Github repos and Portfolio projects causes the selected section/image to 'pop-out', becoming larger in size than the others.
+- Styling adjusted for a better user experience (i.e., color-schemes, complementary background-images, and font-sizes.)
+- Add the corresponding Repo links into the HTML.
+- Deploy the application and add the corresponding link to the README.md section below.
+- Add screenshots of the deployed application below these notes on the README.md.
 
 ---
 
@@ -61,6 +71,9 @@
 ## Final Product
 
 - Insert screenshot images here!!!!!!!!!!!!!!!!!!!!!!!!!
+  - Placeholder #1:
+  - Placeholder #2:
+  - Placeholder #3:
 
 ![Final-Product](add a few images here)
 
