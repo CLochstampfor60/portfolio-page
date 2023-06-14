@@ -139,6 +139,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   padding-block: 20px;
+  min-height: 4rem;
 }
 
 header .button-link {
@@ -147,6 +148,7 @@ header .button-link {
 
 #my-name {
   font-size: 18px;
+  font-weight: 600;
 }
 
 /* DESKTOP NAV */
@@ -194,7 +196,7 @@ nav a:not(.button-link) {
     cursor: pointer;
     border: none;
     background: transparent;
-    padding: 16px 2px;
+    padding: 12px 2px;
   }
 
   /* set button span to pos relative */
@@ -282,12 +284,66 @@ nav a:not(.button-link) {
 }
 
 #intro .container > * {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h1 {
-  font-size: clamp(1.25rem, calc(0.9rem + 1.74vw), 2.25rem);
+  font-size: clamp(2.25rem, 4.5vw, 4rem);
   margin: 0;
+}
+
+h1 + p {
+  font-size: clamp(1.25rem, calc(0.9rem + 1.74vw), 2.25rem);
+  letter-spacing: 4px;
+}
+
+/* ANIMATION *****************************/
+.text-box {
+  /* border: solid red 1px; */
+  clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.text-content {
+  display: inline-block;
+
+  transform: translateY(120%);
+  /* Best to use will-change as a last resort when making something fun. Strong possibility the execution will mess-up the browser. */
+  /* will-change: transform; */
+
+  /* animation: slideUp ease 1s;
+  animation-fill-mode: forwards; */
+}
+
+.contact:hover,
+.contact:focus {
+  animation: hueRotate ease 5s;
+  animation-iteration-count: 3;
+  /* can also write infinite for it to go non-stop. */
+  /* Can remove the hover so the animation starts when the browser uploads. */
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hueRotate {
+  0% {
+    background-color: var(--primary);
+  }
+  20% {
+    background-color: pink;
+  }
+  60% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: purple;
+  }
+  100% {
+    background-color: var(--primary);
+  }
 }
 
 .container {

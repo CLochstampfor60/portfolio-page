@@ -26,7 +26,7 @@ navLinks.forEach((link) => {
 fetch('https://api.github.com/users/CLochstampfor60/repos')
   .then((response) => response.json())
   .then((data) => {
-    // Sort by calendar date
+    // Sort by calendar date, pulling the most recent.
     data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
 
     // Limit the number to 6
@@ -71,3 +71,34 @@ fetch('https://api.github.com/users/CLochstampfor60/repos')
   .catch((error) => {
     console.error(error)
   })
+
+// GSAP ANIMATION ***************************
+
+const tl = gsap.timeline({
+  default: {
+    ease: 'power1.out',
+  },
+})
+
+tl.to('.welcome', {
+  y: 0,
+  duration: 0.8,
+})
+
+tl.to(
+  '.name-title',
+  {
+    y: 0,
+    duration: 1.1,
+    stagger: 0.5,
+  },
+  '-=.3'
+)
+
+tl.fromTo(
+  '.contact',
+  {
+    opacity: 0,
+  },
+  { opacity: 1, duration: 1 }
+)
