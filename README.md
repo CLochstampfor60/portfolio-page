@@ -62,8 +62,7 @@
 
 ## Student's Submitted Work:
 
-- URL of the <u>deployed application</u>: [xxxxxxxxxxxxxxxxxx](add link to live webpage)
-
+- URL of the <u>deployed application</u>: <a href="https://clochstampfor60.github.io/portfolio-page/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
 - URL of the application's <u>GitHub Repository</u>: [CLocky60](#)
 
 ---
