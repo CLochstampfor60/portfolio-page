@@ -46,7 +46,9 @@ fetch('https://api.github.com/users/CLochstampfor60/repos')
 			<h3>${repo.name}</h3>
 			<p class='desc'>${repo.description || ''}</p>
 			<ul id="language-${repo.name}"></ul>	
-			<a href='${repo.html_url}' target='_blank'>View on Githb &rarr;</a>
+			<a href='${
+        repo.html_url
+      }' target='_blank'  rel="noopener noreferrer">View on Githb &rarr;</a>
 			`
       // <ul id='language'>${repo.language || ''}</ul>
 
