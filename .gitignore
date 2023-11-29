@@ -5,6 +5,9 @@
 
 # User-specific files
 
+# Development information/resources for future use
+images-z
+
 *.rsuser
 *.suo
 *.user
