@@ -80,6 +80,7 @@
 
 ## License
 
-This project is licensed under the terms of the MIT license.
+- This project is licensed under the terms of the MIT license.
+- This project is for developer use only.
 
 ---
