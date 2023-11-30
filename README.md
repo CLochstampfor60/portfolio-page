@@ -6,7 +6,7 @@
 
 - The web application harbors accomplished portfolio projects, with the adaptability to showcase future skills and talents as time progresses in the professional world.
 
-- The web application runs several applications in the browser with dynamic updates. Applications include HTML, CSS, Javascript, Font Awesome, and GSAP.
+- Technologies used for this project: HTML, CSS, Javascript, Font Awesome, and GSAP.
 
 ---
 
