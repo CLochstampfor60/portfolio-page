@@ -3,17 +3,20 @@
 :root {
   --textcolor: black;
   --bgcolor: white;
-  --bgcolor-dark: navy;
-  --primary: #b07b65;
-  --primary-muted: #85e7ca7c;
+  --bgcolor-dark: #843e19;
+  --primary: #392222;
+  /* --primary-muted: #392222; */
 
-  --secondary: red;
+  --roseebony: #583c3f;
+  --ultraviolet: #636789;
+  --buff: #ecba85;
 
-  --yellow: #b07b65;
+  /* Old testing color scheme below */
+  /* --yellow: #b07b65;
   --yellow-bg: yellow;
-
+  --neutral: red;
   --purple: purple;
-  --purple-muted: rgba(128, 0, 128, 0.136);
+  --purple-muted: rgba(128, 0, 128, 0.136); */
 }
 
 * {
@@ -164,7 +167,7 @@ nav.open ul {
   flex-direction: column;
   justify-content: center;
 
-  background-color: var(--bgcolor-dark);
+  background-color: var(--buff)
   width: 100vw;
   height: 100vh;
   z-index: 99998;
@@ -336,19 +339,24 @@ h1 + p {
 
 @keyframes hueRotate {
   0% {
-    background-color: var(--primary);
+    background-color: var(--buff);
+    text: var(--bgcolor);
   }
   20% {
     background-color: pink;
+    text: var(--bgcolor);
   }
   60% {
     background-color: yellow;
+    text: var(--bgcolor);
   }
   80% {
     background-color: purple;
+    text: var(--bgcolor);
   }
   100% {
     background-color: var(--primary);
+    text: var(--bgcolor);
   }
 }
 
