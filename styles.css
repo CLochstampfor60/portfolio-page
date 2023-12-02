@@ -481,7 +481,7 @@ h1 + p {
 
 .repo-info p.desc {
   margin-bottom: 14px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .repo-info ul {
@@ -618,7 +618,7 @@ article li {
 
 #cta img {
   color: var(--primary);
-  width: 60px;
+  width: 80px;
 }
 
 #cta a {
