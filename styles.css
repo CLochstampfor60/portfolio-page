@@ -167,7 +167,7 @@ nav.open ul {
   flex-direction: column;
   justify-content: center;
 
-  background-color: var(--buff)
+  background-color: var(--bgcolor-dark);
   width: 100vw;
   height: 100vh;
   z-index: 99998;
@@ -285,7 +285,7 @@ https://pixabay.com/photos/mountain-sunset-panorama-dawn-3166443/
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
-
+  border-bottom: solid var(--primary);
   /* padding-top: 100px;
   padding-bottom: 100px; */
   /* background: linear-gradient(140deg, rgba(135, 207, 235, 0.743), limegreen); */
@@ -314,8 +314,8 @@ h1 + p {
 
 .text-content {
   display: inline-block;
-
   transform: translateY(120%);
+
   /* Best to use will-change as a last resort when making something fun. Strong possibility the execution will mess-up the browser. */
   /* will-change: transform; */
 
@@ -339,24 +339,24 @@ h1 + p {
 
 @keyframes hueRotate {
   0% {
-    background-color: var(--buff);
-    text: var(--bgcolor);
+    background-color: var(--primary);
+    color: var(--bgcolor);
   }
   20% {
-    background-color: pink;
-    text: var(--bgcolor);
+    background-color: var(--buff);
+    color: var(--textcolor);
   }
   60% {
-    background-color: yellow;
-    text: var(--bgcolor);
+    background-color: var(--roseebony);
+    color: var(--bgcolor);
   }
   80% {
-    background-color: purple;
-    text: var(--bgcolor);
+    background-color: var(--ultraviolet);
+    color: var(--textcolor);
   }
   100% {
-    background-color: var(--primary);
-    text: var(--bgcolor);
+    background-color: var(--bgcolor-dark);
+    color: var(--bgcolor);
   }
 }
 
@@ -382,7 +382,7 @@ h1 + p {
   padding: 14px 16px;
   border-radius: 24px;
   border-style: solid;
-  border-color: var(--textcolor) !important;
+  border-color: var(--buff) !important;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -390,9 +390,9 @@ h1 + p {
 
 .button-link:hover,
 .button-link:focus {
-  background-color: var(--bgcolor-dark);
+  background-color: var(--buff);
   font-style: italic;
-  color: white;
+  color: var(--textcolor);
 }
 
 /* SKILLS *****************************/
@@ -445,7 +445,7 @@ h1 + p {
 }
 
 .repo-info {
-  border: solid var(--primary-muted) 2px;
+  border: solid var(--primary) 2px;
   padding: 14px 20px;
 
   display: grid;
@@ -454,7 +454,7 @@ h1 + p {
   gap: 10px 30px;
 
   align-items: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--buff);
   /* color: black; */
 }
 
@@ -493,8 +493,10 @@ h1 + p {
 .repo-info ul[id^='language'] li {
   font-size: 12px;
   text-transform: uppercase;
-  color: var(--yellow);
-  background-color: var(--yellow-bg);
+  /* color: var(--textcolor);
+  background-color: var(--buff); */
+  color: var(--textcolor);
+  background-color: var(--ultraviolet);
   justify-self: start;
   /* display: inline-block; */
   padding: 5px 11px;
