@@ -2,21 +2,23 @@
 
 ## Description:
 
-- Develop a interactive web application from scratch.
+- Develop a interactive web application from scratch that is BOTH mobile and acccesibly friendly.
 
 - The web application harbors accomplished portfolio projects, with the adaptability to showcase future skills and talents as time progresses in the professional world.
 
-- Technologies used for this project: HTML, CSS, Javascript, Font Awesome, and GSAP.
-
----
+- Technologies used for this project:
+  - HTML
+  - CSS
+  - Javascript
+  - GSAP
+  - <a href="https://clochstampfor60.github.io/portfolio-page/" target="_blank" rel="noopener noreferrer">Font Awesome</a>
+  - <a href="https://clochstampfor60.github.io/portfolio-page/" target="_blank" rel="noopener noreferrer">Coolors</a>
 
 ## User Story:
 
 - AS AN employer,
 - I WANT to view a potential employee's deployed portfolio of work samples,
 - SO THAT I can review samples of their work and assess whether they're a good candidate for an open position.
-
----
 
 ## Acceptance Criteria:
 
@@ -40,23 +42,25 @@
 - <i>WHEN</i> I resize the page or view the site on various screens and devices,
   <br><b>THEN</b> I am presented with a responsive layout that adapts to my viewport.
 
----
+## Final Product
 
-## Completed Work and Future Opportunities:
+<p align="center">
+  <img src="./images/project-cards/portfolio-1.jpg" width="350" title="hover text">
+	 <img src="./images/project-cards/portfolio-2.jpg" width="350" title="hover text">
+</p>
 
--Completed Work:
+<p align="center">
+	<img src="./images/project-cards/portfolio-3.jpg" width="350" title="hover text">
+	<img src="./images/project-cards/portfolio-4.jpg" width="350" title="hover text">
+</p>
 
-- Placeholder #1:
-- Placeholder #2:
-- Placeholder #3:
+## Future Opportunities:
 
--Future changes:
-
-- Cursor hover over Github repos and Portfolio projects causes the selected section/image to 'pop-out', becoming larger in size than the others.
-- Styling adjusted for a better user experience (i.e., color-schemes, complementary background-images, and font-sizes.)
-- Add the corresponding Repo links into the HTML.
-- Deploy the application and add the corresponding link to the README.md section below.
-- Add screenshots of the deployed application below these notes on the README.md.
+- As social media presence grows, add the corresponding icons and links to the CTA at the bottom of the page.
+- Add additional animation and responsive 'eye-catchers' without going overboard. Can include different APIs to show my learning and growing wealth of knowledge.
+- As my top GitHub projects expand, to save space and for easier reading for the user, add a Tab button above the Portfolio/Projects section. This feature will allow the User to move with ease between the project-cards inside the pool of options. This provides more space on the web-page without sacrificing other project-showing and general visibility.
+- Add a separate 'Contact Form' that sends a message directly to my business email account. (Currently using LinkedIn and GitHub, as both web-applications offer SIGNIFICANTLY more options, visibility, and security from hackers and spammers).
+- Move the dynamic animations and styling from the Index.html file to the CSS. This will automatic and simplify future changes instead of manually checking each section.
 
 ---
 
@@ -64,17 +68,6 @@
 
 - URL of the <u>deployed application</u>: <a href="https://clochstampfor60.github.io/portfolio-page/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
 - URL of the application's <u>GitHub Repository</u>: [CLocky60](#)
-
----
-
-## Final Product
-
-- Insert screenshot images here!!!!!!!!!!!!!!!!!!!!!!!!!
-  - Placeholder #1:
-  - Placeholder #2:
-  - Placeholder #3:
-
-![Final-Product](add a few images here)
 
 ---
 
