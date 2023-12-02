@@ -82,6 +82,14 @@ footer {
   color: var(--bgcolor);
 }
 
+#github {
+  border-bottom: solid var(--primary);
+}
+
+footer {
+  border-top: solid var(--primary);
+}
+
 header a,
 #intro a,
 #skills a,
@@ -637,4 +645,8 @@ footer .container {
   gap: 40px;
   padding-block: 140px 50px;
   color: white;
+}
+
+hr.footer-hr {
+  border-top: 1px solid #392222;
 }
