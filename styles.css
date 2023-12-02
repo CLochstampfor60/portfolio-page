@@ -3,7 +3,7 @@
 :root {
   --textcolor: black;
   --bgcolor: white;
-  --bgcolor-dark: #659ab0;
+  --bgcolor-dark: navy;
   --primary: #b07b65;
   --primary-muted: #85e7ca7c;
 
@@ -271,15 +271,21 @@ nav a:not(.button-link) {
 
 /* INTRODUCTION **************************** */
 #intro {
+  min-height: 100%;
+  padding-block: 100px;
+  background-image: url('./images/other/mountain-3166443_1280.jpg');
+  /* Image Citation: jplenio, Joe 
+https://pixabay.com/photos/mountain-sunset-panorama-dawn-3166443/
+*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   text-align: center;
+
   /* padding-top: 100px;
   padding-bottom: 100px; */
-  padding-block: 100px;
-  background: linear-gradient(140deg, rgba(135, 207, 235, 0.743), limegreen);
-  /* url('./images/galaxy.png'); */
-  /* background-image: url('./images/Sunset.jpg'); */
-  /* background-image:  url('./images/galaxy.png'); */
-  background-size: cover;
+  /* background: linear-gradient(140deg, rgba(135, 207, 235, 0.743), limegreen); */
   /* color: black; */
 }
 
