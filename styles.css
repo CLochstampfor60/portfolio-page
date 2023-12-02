@@ -503,7 +503,7 @@ h1 + p {
   text-transform: uppercase;
   /* color: var(--textcolor);
   background-color: var(--buff); */
-  color: var(--textcolor);
+  color: var(--bgcolor);
   background-color: var(--ultraviolet);
   justify-self: start;
   /* display: inline-block; */
@@ -538,7 +538,8 @@ h1 + p {
 .grid-container img {
   aspect-ratio: 1.4;
   object-fit: cover;
-  border: solid white 1px;
+  /* border: solid white 1px; */
+  border: solid var(--primary) 3px;
   border-radius: 10px;
 
   /* x, y, blur, spread, color */
@@ -588,10 +589,10 @@ article ul {
 article li {
   font-size: 12px;
   text-transform: uppercase;
-  /* add variables for purple & purple-muted */
   color: var(--buff);
-  /* change the background-color/border & text color */
   background-color: var(--roseebony);
+  /* color: var(--buff);
+  background-color: var(--ultraviolet); */
   justify-self: start;
   /* display: inline-block; */
   padding: 5px 11px;
@@ -607,7 +608,7 @@ article li {
   color: var(--primary);
   background-color: var(--buff);
   padding: 30px 40px 30px;
-  border: 3px solid var(--primary);
+  border: 3px solid var(--roseebony);
   border-radius: 30px;
   text-align: center;
   box-shadow: 13px 13px 13px rgba(0, 0, 0, 0.523);
