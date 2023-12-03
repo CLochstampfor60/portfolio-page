@@ -62,12 +62,11 @@
 - Add a separate 'Contact Form' that sends a message directly to my business email account. (Currently using LinkedIn and GitHub, as both web-applications offer SIGNIFICANTLY more options, visibility, and security from hackers and spammers).
 - Move the dynamic animations and styling from the Index.html file to the CSS. This will automatic and simplify future changes instead of manually checking each section.
 
----
+## Developer's Submitted Work:
 
-## Student's Submitted Work:
+- URL of the <u>GitHub</u> deployed application: <a href="https://clochstampfor60.github.io/portfolio-page/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
 
-- URL of the <u>deployed application</u>: <a href="https://clochstampfor60.github.io/portfolio-page/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
-- URL of the <u>deployed application</u>: <a href="https://lockys-media-mania.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
+- URL of the <u>Netlify</u> deployed application: <a href="https://lockys-media-mania.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
 - URL of the application's <u>GitHub Repository</u>: [CLocky60](#)
 
 ---
