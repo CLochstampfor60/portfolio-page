@@ -67,6 +67,7 @@
 ## Student's Submitted Work:
 
 - URL of the <u>deployed application</u>: <a href="https://clochstampfor60.github.io/portfolio-page/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
+- URL of the <u>deployed application</u>: <a href="https://lockys-media-mania.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
 - URL of the application's <u>GitHub Repository</u>: [CLocky60](#)
 
 ---
