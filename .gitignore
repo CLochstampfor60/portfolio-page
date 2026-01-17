@@ -5,6 +5,23 @@
 
 # User-specific files
 
+# Secrets
+.env
+.env.local
+
+# VS Code Settings
+.vscode/
+*.code-workspace
+
+# Build/Dependency Folders
+node_modules/
+dist/
+build/
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
 # Development information/resources for future use
 images-z
 .vscode
